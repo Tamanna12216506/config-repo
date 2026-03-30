@@ -1,9 +1,16 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://mysql:3306/paymentdb?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
 app:
   environment: prod
-
-spring:
-  jpa:
-    show-sql: false
 
 payment:
   simulation:
@@ -12,4 +19,3 @@ payment:
 logging:
   level:
     root: INFO
-

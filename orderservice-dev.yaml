@@ -1,7 +1,17 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://mysql:3306/orderdb?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
 app:
   environment: dev
 
 logging:
   level:
     root: DEBUG
-
