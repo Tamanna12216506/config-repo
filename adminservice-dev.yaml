@@ -1,0 +1,7 @@
+app:
+  environment: dev
+
+logging:
+  level:
+    root: DEBUG
+

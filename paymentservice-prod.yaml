@@ -1,0 +1,15 @@
+app:
+  environment: prod
+
+spring:
+  jpa:
+    show-sql: false
+
+payment:
+  simulation:
+    failure-rate: 0.0
+
+logging:
+  level:
+    root: INFO
+

@@ -1,0 +1,17 @@
+app:
+  environment: test
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+payment:
+  simulation:
+    failure-rate: 0.0
+
+logging:
+  level:
+    root: WARN
+

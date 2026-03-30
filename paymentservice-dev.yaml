@@ -1,0 +1,11 @@
+app:
+  environment: dev
+
+payment:
+  simulation:
+    failure-rate: 0.2
+
+logging:
+  level:
+    root: DEBUG
+

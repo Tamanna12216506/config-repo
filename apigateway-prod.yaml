@@ -1,0 +1,7 @@
+app:
+  environment: prod
+
+logging:
+  level:
+    root: INFO
+
